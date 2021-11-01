@@ -36,6 +36,25 @@ Models are usually saved before inferencing. ```./r3d -g```  saves the network s
 ./r3d -r ../video/applying\ cream/OEGarMnMljQ_000007_000017.mp4
 ```
 
+## Docker
+
+Using Docker is also a good choice. Make sure you have successfully installed the docker and nvidia-docker. Once the environment is ready, you can using following commands to download and boot the docker image:
+
+```
+docker pull cheer7/r3d_tensorrt:latest
+docker run -it --gpus all cheer7/r3d_tensorrt:latest
+```
+
+The same content in the Docker, the file path is ```/root/r3d_TensorRT```. It doesn't need to be compiled and can be used directly:
+
+```
+cd
+cd r3d_TensorRT/build/
+./r3d -r ../video/applying\ cream/OEGarMnMljQ_000007_000017.mp4
+```
+
+
+
 ## More Information
 
 r3d does not have the last softmax function in pyTorch's implementation version. To facilitate classification, the last layer of softmax function is added in tensorRT's implementation, which is also the operation in the experimental part of the paper.
