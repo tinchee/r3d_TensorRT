@@ -1,5 +1,5 @@
 # r3d_TensorRT
-An [r3d network](https://arxiv.org/abs/1711.11248) implemented with TensorRT8.x, The weight of the model comes from PyTorch. A description of the models in Pytroch can be found [here](https://pytorch.org/vision/stable/models.html#video-classification)
+A [r3d network](https://arxiv.org/abs/1711.11248) implemented with TensorRT8.x, The weight of the model comes from PyTorch. A description of the models in Pytroch can be found [here](https://pytorch.org/vision/stable/models.html#video-classification)
 
 ## Enviroments
 
